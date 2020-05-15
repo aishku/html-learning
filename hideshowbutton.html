@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Js first page
+</title>
+<script type="text/javascript">
+function showdiv(){
+	document.getElementById("myid").style.display="block";
+}
+function hidediv(){
+	document.getElementById("myid").style.display="none";
+}
+</script>
+<style>
+.mydiv{
+width:200px;
+height:100px;
+line-height: 100px; /*to vertically center text in div, this should be equal to height of div*/
+font-size:15px;
+background-color:blue;
+margin:50px;
+color:white;
+text-align: center; /* to horizontally center text*/
+}
+
+</style>
+
+</head>
+<body>
+<button onclick="showdiv()"> Show div </button></br>
+<button onclick="hidediv()"> Hide div </button></br>
+<div class="mydiv" id="myid">
+Hi This is div
+</div>
+</body>
+</html>
